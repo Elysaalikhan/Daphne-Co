@@ -1,0 +1,104 @@
+
+/* ========================= about ============================================== */
+
+
+.about-section {
+    width: 100%;
+}
+.about-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.about-image-content, .about-text-content {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+}
+.about-text-content {
+    padding-left: 50px;
+}
+
+.about-image-content{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+.about-image-content img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.about-text, .read-more-btn{
+    color: #283049;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 3em;
+    margin-bottom: 10px;
+}
+.read-more-text{
+    display: none; 
+}
+.read-more-btn{
+    cursor: pointer;
+    text-decoration: underline;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 15px;
+}
+.read-more-btn:hover{
+    color: #86a0b6;
+}
+
+.read-more-text--show{
+    display: inline;
+}
+
+/* ============ media ======================== */
+@media screen and (max-width: 1024px){
+
+    .about-body{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .about-text-content a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .about-text-content p, .button {
+        font-size: 15px;
+    }
+   
+  
+
+}
+@media screen and (max-width: 768px){
+    .about-body{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .about-text-content{
+        padding: 0;
+        margin-top: 30px;
+    }
+}

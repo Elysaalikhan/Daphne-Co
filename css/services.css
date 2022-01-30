@@ -1,0 +1,136 @@
+
+ 
+/* =========================== services ========================================== */
+
+.service-card-group{
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.service-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8.4px 1.6px rgb(13 32 133 / 5%);
+            box-shadow: 0px 2px 8.4px 1.6px rgb(13 32 133 / 5%);
+    padding: 35px 20px;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin: 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+}
+.service-box:hover{
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+    background-color: #edf3f8;
+}
+
+.srv-icon{
+    width: 50px;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+.srv-icon img{
+    width: 100%;
+    height: 100%;
+    text-align: center;   
+}
+.srv-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+.srv-content h3, .srv-content p{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.srv-content h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    color: #283049;
+    text-align: center;
+    
+}
+.srv-content p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #283049;
+    text-align: center;
+}
+
+/* ============ media ======================== */
+@media screen and (max-width: 1024px){
+    .service-card-group{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .service-box{
+        min-height: 60%;
+    }
+    .srv-content h3{
+        font-size: 20px;
+    }
+    .srv-content p{
+        font-size: 15px;
+    }
+
+
+}
+@media screen and (max-width: 767px){
+    .service-card-group{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .service-box{
+        max-width: 100%;
+    }
+
+}

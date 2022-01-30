@@ -1,0 +1,327 @@
+
+
+ 
+/* =========================== contact ========================================== */
+
+.contact-card-group{
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.contact-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 8.4px 1.6px rgb(13 32 133 / 5%);
+            box-shadow: 0px 2px 8.4px 1.6px rgb(13 32 133 / 5%);
+    padding: 35px 20px;
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+    margin: 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+}
+.contact-box:hover{
+    -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+            transform: translateY(-15px);
+    background-color: #edf3f8;
+}
+
+.cnt-icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 40px;
+    
+}
+.cnt-icon img{
+    width: 100%;
+    height: 100%;
+    text-align: center;   
+}
+.cnt-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+.cnt-content h3, .srv-content p{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.cnt-content h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    color: #283049;
+    text-align: center;
+    
+}
+.cnt-content p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #283049;
+    text-align: center;
+}
+
+
+/* ============ media ======================== */
+@media screen and (max-width: 1024px){
+    .contact-card-group{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .contact-box{
+        height: 300px;
+        max-width: 45%;
+        margin-bottom: 20px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 300px;
+                flex: 1 1 300px;
+    }
+    .cnt-content h3{
+        font-size: 20px;
+    }
+    .cnt-content p{
+        font-size: 15px;
+    }
+
+
+}
+@media screen and (max-width: 767px){
+    .contact-card-group{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .contact-box{
+        max-width: 100%;
+    }
+
+}
+
+/* ==================== form ====================================== */
+
+.form-title{
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.form-title h2{
+    font-size: 40px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    color: #283049;
+    margin: 15px 0;
+    
+}
+.form-title p{
+    color: #283049;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-area{
+    padding: 50px;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 15px 0px rgb(62 65 159 / 10%);
+            box-shadow: 0px 1px 15px 0px rgb(62 65 159 / 10%);
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 99;
+}
+.contact-form-area form{
+    margin: 0 -15px;
+    overflow: hidden;
+}
+.contact-form-area form >div{
+    width: calc(50% - 30px);
+    float: left;
+    margin: 0 15px 25px;
+}
+
+.contact-form-area form input, 
+.contact-form-area form select,
+.contact-form-area form textarea {
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    padding-left: 25px;
+    border: 1px solid #e4ebf2;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    color: #283049;
+
+    
+}
+.contact-form-area form .fullwidth{
+    width: calc(100% - 25px);
+    float: none;
+    clear: both;
+}
+.contact-form-area form textarea{
+    height: 180px;
+    padding-top: 15px;
+}
+.contact-form-area form textarea::-webkit-input-placeholder, .contact-form-area form input::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+.contact-form-area form textarea::-moz-placeholder, .contact-form-area form input::-moz-placeholder {
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+.contact-form-area form textarea:-ms-input-placeholder, .contact-form-area form input:-ms-input-placeholder {
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+.contact-form-area form textarea::-ms-input-placeholder, .contact-form-area form input::-ms-input-placeholder {
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+.contact-form-area form textarea::placeholder, 
+.contact-form-area form input::placeholder {
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+}
+.contact-form-area form .submit-area{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+ input:focus, select:focus, textarea:focus {
+    border: 1px solid #86a0b6 !important;
+ }
+    
+ input:focus, textarea:focus, select:focus {
+    outline-offset: 0px !important;
+    outline: none !important;
+     }
+
+.button{
+    width: 250px;
+    background: #cde0ef;
+    border: 1px solid #cde0ef;
+    font-weight: 300;
+    padding: 20px 30px;
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    color: #283049;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid #cde0ef;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(8px, 8px);
+        -ms-transform: translate(8px, 8px);
+            transform: translate(8px, 8px);
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; 
+    cursor: pointer; 
+}
+.button:hover{
+    background: #86a0b6;
+    border: 1px solid #86a0b6;
+    color: #fff;
+}
+.button:hover::after{
+    border: 2px solid #86a0b6;
+}
+
+
+/* ============ media ======================== */
+@media screen and (max-width: 1024px){
+    .form-title h2{
+        font-size: 30px;
+    }
+    .button, .form-title p{
+        font-size: 15px;
+    }
+    
+}
+  
+@media screen and (max-width: 767px){
+     .contact-form-area form > div{
+        width: calc(100% - 25px);
+    }
+}
+
+
+/* ==================== map ============================== */
+
+.map-cont{
+    height: 550px;
+}
+.map-cont iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    
+}
+
+
+
+
+
+

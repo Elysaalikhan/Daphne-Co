@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daphne</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+
+    
+
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+
+    <link rel="icon" href="icons/bluebell.png" type="" sizes="20x20">
+
+</head>
+
+<body>
+    <!-- ========================================== preloader ===================================================================== -->
+    <div class="preloader-wrapper">
+        <img class="loader-crcl" src="icons/preloader/loader.gif" alt="">
+        <img class="loader-img" src="icons/bluebell.png" alt="">
+    </div>
+
+    <!-- ===================================== header section =========================================================== -->
+
+    <my-header>
+
+    </my-header>
+
+
+    <section class="section-header">
+        <div class="header-img">
+            <div class="container">
+                <div class="header-content">
+                    <h2 class="wow slideInDown" data-wow-duration="2s"> About us </h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========================================= about us ========================================================= -->
+
+    <main>
+
+        <section class="about-section section-pad">
+
+            <div class="about-body container-extra">
+
+                <div class="about-image-content wow slideInLeft" data-wow-duration="2s">
+                    <img src="images/about us/Weddings3.png" alt="">
+                </div>
+
+                <div class="about-text-content wow slideInRight" data-wow-duration="2s">
+
+                    <p class="about-text">Daphne is a team of wedding planners and designers
+                        specialized in destination weddings in Scotland for those seeking authentic and unique
+                        celebrations. Passionate about what we do, we strive to create outstanding, memorable
+                        experiences that exceed expectations.
+                        <span class="read-more-text">
+                            We are known for curating beautiful and welcoming
+                            multi-day wedding
+                            celebrations. With music, food, décor, and thoughtful details, we weave warmth and richness
+                            into the fabric of each of our weddings. <br>
+                            From the moment we meet to the day of the wedding, we strive to make the
+                            experience of planning an enjoyable, detailed, and thoughtful one, where our couples feel
+                            truly
+                            valued. We have been privileged to work at iconic venues, private estates and often use the
+                            environment
+                            as inspiration, forgoing trends in exchange for something personal and authentic. The
+                            overall
+                            experience is paramount, from great food to music, to the decor and all details.
+
+                        </span>
+                    </p>
+                    <span class="read-more-btn"> Read More</span>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+    <my-footer>
+
+    </my-footer>
+
+
+
+    <!-- ============================= read more ======================================= -->
+
+
+    <script>
+
+        const parentContainer = document.querySelector('.about-text-content');
+
+        parentContainer.addEventListener('click', event => {
+
+            const current = event.target;
+
+            const isReadMoreBtn = current.className.includes('read-more-btn');
+
+            if (!isReadMoreBtn) return;
+
+            const currentText = event.target.parentNode.querySelector('.read-more-text');
+
+            currentText.classList.toggle('read-more-text--show');
+
+            current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+
+        });
+    </script>
+
+
+
+    <!-- ================= animate css / wow js ========================== -->
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+
+</html>
